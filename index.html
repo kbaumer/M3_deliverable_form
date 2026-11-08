@@ -34,13 +34,16 @@
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>Choose a class you wish to register to:</legend>
-                    <p class="help">Use an appropriate radio, checkbox, or select structure for the task.</p>
-                        <label class="choice">
-                        <input type="checkbox" name="request_type" value="option-a"> Craft Movie Night | Fri. Nov 20th, 7:00PM</label>
+                    <legend>Choose a class(s) you wish to register to:</legend>
+                    <p class="help">Please select the box next to the class or classes you are registering to. If a class has multiple time slots you may only select one.</p>
+                        <label for="movie">
+                        <input type="checkbox" id="movie" name="register" value="movie"> Craft Movie Night | Fri. Nov 20th, 7:00PM</label>
                         
-                        <label class="choice">    
-                        <input type="checkbox" name="request_type" value="option-b"> Rubber Stamping Class | Sat. Dec 5th, 10:00AM</label>
+                        <label for="stamping">    
+                        <input type="radio" id="stamping" name="register" value="stamping10"> Rubber Stamping Class | Sat. Dec 5th, 10:00AM</label>
+                    
+                        <label for="stamping">    
+                        <input type="radio" id="stamping" name="register" value="stamping02"> Rubber Stamping Class | Sat. Dec 5th, 2:00PM</label>
                     </fieldset>
                     <div class="field">
                         <label for="details">Request details</label>
