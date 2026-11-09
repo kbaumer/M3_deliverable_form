@@ -45,12 +45,31 @@
                         <label for="stamping">    
                         <input type="radio" id="stamping" name="register" value="stamping02"> Rubber Stamping Class | Sat. Dec 5th, 2:00PM</label>
                     </fieldset>
+                    <fieldset>
+                        <legend>How many people are attending?</legend>
+                        <p class="help"><strong>Select the number of people attending the above class(s). Max allowed per class is 4.</strong> <br>This is to keep class sizes manageable and to allow others to attend. 
+                            Leave an amount request in the notes section below and we can contact you if registration is low and we can accommodate. Thank you for understanding.</p>
+                        <div class="field">
+                            <label for="attendance">Number attending (max 4)</label>
+                            <input 
+                                type="number" 
+                                id="attendance" 
+                                name="attendance" 
+                                value="1" 
+                                required
+                                min="1"
+                                max="4">
+
+                        </div>
+
+
+                    </fieldset>
                     <div class="field">
-                        <label for="details">Request details</label>
+                        <label for="details">Special Accommodations or Notes:</label>
                         <p class="help" id="details-help">Explain the expected content and any limit before entry.</p>
-                        <textarea id="details" name="details" aria-describedby="details-help"></textarea>
+                        <textarea id="details" name="details" aria-describedby="details-help" placeholder="Accommodation ex: Wheelchair, left handed tools needed, etc."></textarea>
                     </div>
-                    <button type="submit">Replace with a specific action</button>
+                    <button type="submit">Submit Registration form</button>
                 </form>
                 <section id="states">
                     <h2>F5 · State and Recovery Specimen</h2>
