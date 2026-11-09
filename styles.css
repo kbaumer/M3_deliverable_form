@@ -115,7 +115,9 @@ button{
 button:disabled{
     opacity:.55;
     cursor:not-allowed;
+    color: transparent;
 }
+
 @media (min-width:48rem){
     .paired-fields{
         display:grid;
