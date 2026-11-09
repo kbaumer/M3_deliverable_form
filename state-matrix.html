@@ -47,12 +47,45 @@
                 <tbody>
                     <tr>
                         <td>contact info</td>
+                        <td>placeholder examples in every field; name, email, and phone number</td>
+                        <td>Mouse: hover message. Key tab: can select each field. Both: click and tab highlights field with a navy boarder. </td>
+                        <td>Yes, for name and email. No, for phone number</td>
+                        <td>To meet required state - enter name and email fields. Email field must be in email format. Phone number can be skipped, it is optional.</td>
+                        <td>when a required field, name or email, is left blank - Border highlights missing field and error message saying "Please fill out this field" pops up</td>
+                        <td>If disabled it cannot be selected by tab or mouse and is grayed out.</td>
                         <td></td>
-                        <td>Yes</td>
+                    </tr>
+
+                    <tr>
+                        <td>Class selection</td>
+                        <td>Default state is Craft Movie Night is a checkbox and both Stamping classes are radio buttons so you can only select one. User can check and uncheck box to select Movie Night but user cannot deselect the radio buttons - once selected you can only toggle between class times</td>
+                        <td>Mouse: no hover - click to select. Key tab: can highlight each field with navy border and select with space bar.</td>
+                        <td>no, Could not get 'required' to work with class selection. If field is required that class must be selected. This makes a weakness in the form where user can forget to select a class and still submit their form. </td>
+                        <td>No required state, can be missed - To meet ideal required state - select one or both classes. only one stamping class can be selected</td>
+                        <td>Currently N/A - An ideal invalid state, if no classes are selected an error message pops up to say make a selection.</td>
+                        <td>If disabled it cannot be selected by tab or mouse and button is grayed out.</td>
                         <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Attendance</td>
+                        <td>Default state is field has "1" selected and user can use right arrows to have numbers go up or down. min is 1, max is 4</td>
+                        <td>Mouse: select arrows on the right of field appear when mouse hovers - click arrows to select. Key tab: highlights field with navy border, highlights number and select a number with up and down arrows.</td>
+                        <td>yes, field is always filled with at least 1</td>
+                        <td>N/A - always valid </td>
+                        <td>N/A - always valid</td>
+                        <td>If disabled it cannot be selected by tab or mouse and is grayed out. Will still submit form if disabled</td>
                         <td></td>
-                        <td></td>
-                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>Special Accommodations or Notes</td>
+                        <td>Default state is field has no character limit and is type="text". has example placeholder text.</td>
+                        <td>Mouse: click to select field and type. Key tab: highlights field with navy border, type to add text</td>
+                        <td>no - field is optional</td>
+                        <td>N/A - always valid </td>
+                        <td>N/A - always valid</td>
+                        <td>If disabled it cannot be selected by tab or mouse and is grayed out.</td>
                         <td></td>
                     </tr>
 
