@@ -1,14 +1,17 @@
 :root{
-    --color-text:#404040;
-    --color-surface:#fff;
-    --color-action:#8c1d40;
-    --color-accent:#ffc627;
+    --color-text:black;
+    --color-surface:#b0aac0;
+    --color-action:#36486b;
+    --color-accent:#41c8b1;
     --color-border:#747474;
     --color-error:#b3261e;
-    --color-muted:#5c6670;
+    --color-muted:#222;
     --space-3:1rem;
     --radius:.5rem;
     --measure:68ch;
+    --filson-font:"filson-pro", sans-serif; font-weight: 300; font-style: normal;
+    --bagatela-font:"bagatela", serif; font-weight: 600; font-style: normal;
+    --tiffany-font: "adobe-handwriting-tiffany", sans-serif; font-weight: 400; font-style: normal;
 }
 *,*::before,*::after{
     box-sizing:border-box;
@@ -24,10 +27,14 @@ body{
     padding:clamp(2rem,6vw,5rem);
     background:var(--color-action);
     color:#fff;
+    font-family: var(--filson-font), Verdana, Tahoma, sans-serif;
 }
 .eyebrow{
     color:var(--color-accent);
-    font-weight:700;
+    font-size: 2rem;
+    font-weight:300;
+    font-family: var(--filson-font), Verdana, Tahoma, sans-serif;
+    
 }
 .lede{
     max-width:var(--measure);
@@ -50,7 +57,7 @@ form{
 }
 fieldset{
     padding:1rem;
-    border:1px solid #d0d0d0;
+    border:1px solid var(--color-action);
     border-radius:var(--radius);
 }
 legend,label{
@@ -89,12 +96,12 @@ button{
     padding:.75rem 1rem;
     background:var(--color-action);
     color:#fff;
-    border:2px solid var(--color-action);
+    border:2px solid #fff;
     border-radius:.25rem;
     font-weight:700;
 }
 :focus-visible{
-    outline:.2rem solid var(--color-accent);
+    outline:.2rem solid var(--color-action);
     outline-offset:.2rem;
 }
 .error-summary,.field-error{
